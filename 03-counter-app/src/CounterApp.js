@@ -27,8 +27,8 @@ const [counter, setCounter] = useState(value) //Retorna un arreglo con dos valor
         )
 }
 
-CounterApp.propTypes = {
-    value: PropTypes.number.isRequired
-}
+// CounterApp.propTypes = {
+//     value: PropTypes.number.isRequired
+// }
 
 export default CounterApp
