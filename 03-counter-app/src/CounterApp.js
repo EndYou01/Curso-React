@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState as pepe} from 'react'
 import PropTypes from "prop-types";
 
 const CounterApp = ({ value=10 }) => {
 
-const [counter, setCounter] = useState(value) //Retorna un arreglo con dos valores
+const [counter, setCounter] = pepe(value) //Retorna un arreglo con dos valores
 
 
     // handleAdd
