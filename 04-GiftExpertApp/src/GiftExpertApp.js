@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
-import { AddCategories } from './components/AddCategories'
+import { AddCategory } from './components/AddCategories'
+import { GifGrid } from './components/GifGrid'
 
 export const GiftExpertApp = () =>{
 
     // const categories = ['One Punch', 'Samurai X', 'Dragon Ball']
 
-    const [categories, setCategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball'])
+    const [categories, setCategories] = useState(['One Punch'])
 
     // const handleAdd = () => {
     //     setCategories([...categories, 'HunterXHunter'])
@@ -18,15 +19,18 @@ export const GiftExpertApp = () =>{
     return (
         <>
                <h2>GiftExpertApp</h2>
-                <AddCategories setCategories={setCategories}/>
-               <hr />
-
+                <AddCategory setCategories={setCategories}/>
+               <hr/>
 
                 <ol>
                     {
-                    categories.map( (category, i) => {
-                        return <li key={ category } >{category}</li>
-                    } )
+                        categories.map( category =>
+                        // <li key={ category } >{category}</li>
+                        <GifGrid 
+                            key={category}
+                            category={category}
+                            />
+                        )
                     }
                 </ol>
         </>
