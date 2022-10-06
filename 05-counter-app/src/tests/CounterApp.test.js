@@ -61,13 +61,7 @@ describe('Pruebas en <CounterApp/>', () => {
         const counterText = wrapper.find('h2').text().trim()
 
         expect(counterText).toBe('105')
-
-      
     })
-    
-    
-    
-
 })
 
 
