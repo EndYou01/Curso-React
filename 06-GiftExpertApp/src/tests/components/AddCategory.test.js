@@ -13,7 +13,7 @@ describe('Pruebas en <AddDirectory/>', () => {
       
         expect( wrapper ).toMatchSnapshot()
 
-    })
+    })  
 
 
 })
