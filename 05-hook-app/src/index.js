@@ -7,11 +7,15 @@ import ReactDOM from 'react-dom/client';
 // import { FormWithCustomHook } from './components/02-useEffect/FormWithCustomHook';
 // import { MultipleCustomHooks } from './components/03-examples/MultipleCustomHooks';
 // import { FocusScreen } from './components/04-useRef/FocusScreen';
-import { RealExampleRef } from './components/04-useRef/RealExampleRef';
+// import { RealExampleRef } from './components/04-useRef/RealExampleRef';
+// import { Layou   t } from './components/05-useLayoutEffect/Layout';
+// import { Memorize } from './components/06-Memos/Memorize';
+// import { MemoHook } from './components/06-Memos/MemoHook';
+import { CallbackHook } from './components/06-Memos/CallbackHook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <RealExampleRef />
+    <CallbackHook />
 );
 
