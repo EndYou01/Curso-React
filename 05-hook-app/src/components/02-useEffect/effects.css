@@ -1,8 +1,14 @@
 body{
     padding: 70px;
+    
 }
 
 footer{
     padding-top: 10px ;
 }
+
+button{
+    margin-right: 20px;
+}
+
     
