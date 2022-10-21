@@ -15,11 +15,12 @@ import ReactDOM from 'react-dom/client';
 // // import { CallbackHook } from './components/06-Memos/CallbackHook';
 // import { Padre } from './components/07-tarea-memo/Padre';
 // import './components/08-useReducer/intro-reducer'
-import {TodoApp} from './components/08-useReducer/TodoApp'
+// import {TodoApp} from './components/08-useReducer/TodoApp'
+import { MainApp } from './components/09-useContext/MainApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
     root.render(
-        <TodoApp/>
+        <MainApp/>
     );
 
