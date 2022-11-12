@@ -29,9 +29,10 @@ export const Navbar = () => {
                         DC
                     </NavLink>
                 </div>
-            </div>
+            </div>    
+            
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 nav">
                 <ul className="navbar-nav ml-auto">
                     <NavLink 
                         className="nav-item nav-link" 
