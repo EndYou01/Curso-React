@@ -5,6 +5,8 @@ import { types } from '../../types/types'
 
 export const LoginScreen = () => {
 
+  const lastPath = localStorage.getItem('lastPath')||'/'
+
   const navigate = useNavigate()
 
   const {dispatch} = useContext ( AuthContext)
@@ -18,7 +20,7 @@ export const LoginScreen = () => {
       }
     })
 
-    navigate('/')
+    navigate(lastPath)
   }
 
   return (
