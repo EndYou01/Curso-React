@@ -12,24 +12,16 @@ export const AuthRouter = () => {
     const navigate = useNavigate()
 
     return (
-        <>
-        <button onClick={() => {
-            navigate("/auth/login")
-        }}>
-            Login
-        </button>
-
-        <button onClick={ () => {
-            navigate("/auth/register")
-        }}>
-            Register
-        </button>
-        
-            <Routes>
-                <Route path="/auth/login" element={<LoginScreen/>}/>
-                <Route path="/auth/register" element={<RegisterScreen/>}/>
-                <Route path="/*" element={<LoginScreen/>}/>
-            </Routes>
-        </>
+        <div className='auth__main'>
+            <div className='auth__box-container'>
+                
+                <Routes>
+                    <Route path="/auth/login" element={<LoginScreen/>}/>
+                    <Route path="/auth/register" element={<RegisterScreen/>}/>
+                    <Route path="/*" element={<LoginScreen/>}/>
+                </Routes>
+            
+            </div>
+        </div>
     )
 }
