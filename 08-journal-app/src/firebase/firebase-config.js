@@ -1,7 +1,10 @@
+//Before
+
 // import firebase from "firebase/app";
 // import "firebase/firestore";
 // import "firebase/auth";
 
+//After
 // v9 compat packages are API compatible with v8 code
 
 import firebase from 'firebase/compat/app';
