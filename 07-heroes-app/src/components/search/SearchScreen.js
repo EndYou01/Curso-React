@@ -11,6 +11,7 @@ export const SearchScreen = () => {
     const navigate = useNavigate()
 
     const location = useLocation()
+    console.log(location)
 
     const {q=''} = queryString.parse(location.search)
     
