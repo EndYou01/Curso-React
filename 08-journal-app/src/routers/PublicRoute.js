@@ -8,9 +8,6 @@ export const PublicRoute = (isLoggedIn) => {
 
   const { children, logged } = isLoggedIn;
 
-  console.log('public')
-  console.log(logged)
-
   return (
     ( logged )
       ? <Navigate to={'/'} />

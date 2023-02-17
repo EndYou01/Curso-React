@@ -7,12 +7,6 @@ export const PrivateRoute = (isLoggedIn) => {
 
   const { children, logged } = isLoggedIn
 
-
-  console.log('private')
-
-  console.log(logged)
-
-
   return (
     (logged)
       ? children

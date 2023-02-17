@@ -13,6 +13,8 @@ import { login } from '../actions/auth';
 
 import { PrivateRoute } from './PrivateRoute';
 import { PublicRoute } from './PublicRoute';
+import { loadNotes } from '../helpers/loadNotes';
+import { setNote, setNotes } from '../actions/notes';
 
 export const AppRouter = () => {
 
@@ -24,16 +26,18 @@ export const AppRouter = () => {
 
   useEffect(() => {
 
-    firebase.auth().onAuthStateChanged((user) => {
+    firebase.auth().onAuthStateChanged(async(user) => {
 
       if (user?.uid) {
         dispatch(login(user.uid, user.displayName));
         setIsLoggedIn(true);
-        console.log('setIsLoggedIn true')
+
+        const notes = await loadNotes( user.uid );
+
+        dispatch(setNotes( notes ))
+
       } else {
         setIsLoggedIn(false);
-        console.log('setIsLoggedIn false')
-
       }
 
       setChecking(false);
@@ -44,7 +48,7 @@ export const AppRouter = () => {
 
   if (checking) {
     return (
-      <h1 className='espere'>Espere...</h1>
+      <h1 className='espere'>Please Wait...</h1>
     )
   }
 
