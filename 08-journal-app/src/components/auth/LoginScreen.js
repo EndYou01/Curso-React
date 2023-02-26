@@ -24,13 +24,16 @@ export const LoginScreen = () => {
     const handleGoogleLogin = () => {
         dispatch( startGoogleLogin());
     }
-
     return (
         <div>
 
             <h3 className='auth__title'>Login</h3>
+{/* <h1 class="animate__animated animate__bounce">An animated element</h1> */}
 
-            <form onSubmit={handleLogin}>
+            <form 
+                onSubmit={handleLogin}
+                className='animate__animated animate__fadeIn animate__faster'
+            >
                 
                 <input className="auth__input" type="text" placeholder='Email' name="email" autoComplete='off' value={email} onChange={handleInputChange}/>
 
