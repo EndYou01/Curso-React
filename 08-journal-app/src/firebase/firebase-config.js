@@ -14,12 +14,12 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA7eQwn_jozNyi8pEUegZfPbRI_UTHYw_c",
-  authDomain: "journal-react-app-6ef8f.firebaseapp.com",
-  projectId: "journal-react-app-6ef8f",
-  storageBucket: "journal-react-app-6ef8f.appspot.com",
-  messagingSenderId: "753627153296",
-  appId: "1:753627153296:web:33fd9287f5cb1a7bc9e915"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID,
 };
 
 // const firebaseConfigTesting = {
