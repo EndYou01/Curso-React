@@ -16,7 +16,7 @@ export const AppRouter = () => {
 
                 <Route exact path='/login' element={<LoginScreen />} />
 
-                <Route exact path='/' element={<CalendarScreen />} />
+                <Route exact path='/*' element={<CalendarScreen />} />
 
             </Routes>
 
