@@ -26,6 +26,27 @@ const events = [{
 		name: 'senjudo'
 	}
 }]
+import { Navbar } from '../ui/Navbar'
+
+import { Calendar, momentLocalizer } from 'react-big-calendar'
+import moment from 'moment'
+import 'moment/locale/es'
+
+import 'react-big-calendar/lib/css/react-big-calendar.css';
+import { messages } from '../../helpers/calendar-messages-es';
+
+moment.locale('es')
+
+const localizer = momentLocalizer(moment)
+
+
+const events = [{
+	title: 'Cumpleaños del jefe',
+	start: moment().toDate(),
+	end: moment().add(2, 'hours').toDate(),
+	bgcolor: '#fafafa',
+	notes: 'Comprar el pastel'
+}]
 
 export const CalendarScreen = () => {
 

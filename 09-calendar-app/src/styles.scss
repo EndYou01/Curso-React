@@ -50,6 +50,11 @@ html, body{
     outline: none;
     padding: 10px;
 }
+html, body{
+    height: 100vh;
+    width: 100vw;
+
+}   
 
 /*Date Picker*/
 .react-datetime-picker input:focus{
@@ -58,4 +63,9 @@ html, body{
 .react-datetime-picker__wrapper{
     display: flex;
     border: 0px solid gray !important;
+}
+.calendar_screen{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
