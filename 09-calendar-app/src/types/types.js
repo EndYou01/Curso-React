@@ -4,4 +4,11 @@ export const types = {
     uiCloseModal: '[ui] Close Modal',
 
 
+    eventSetActive: '[event] Set Active',
+    eventAddNew: '[event] Add new',
+    eventClearActiveEvent: '[event] Clear Active Event',
+    eventUpdated: '[event] Event Udpated',
+    eventDeleted: '[event] Event Deleted',
+
+    
 }
