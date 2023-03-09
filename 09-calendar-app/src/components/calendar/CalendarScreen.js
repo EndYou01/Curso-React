@@ -12,7 +12,7 @@ import { CalendarModal } from './CalendarModal'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { uiOpenModal } from '../../actions/ui'
-import { eventAddNew, eventClearActiveEvent, eventSetActive } from '../../actions/events'
+import { eventClearActiveEvent, eventSetActive } from '../../actions/events'
 import { AddNewFab } from '../ui/AddNewFab'
 import { DeletedEventFab } from '../ui/DeletedEventFab'
 
