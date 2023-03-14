@@ -1,10 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { CalendarApp } from './CalendarApp';
-import './styles.scss'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <CalendarApp />
+import './styles.css';
+
+ReactDOM.render(
+    <CalendarApp />,
+  document.getElementById('root')
 );
-

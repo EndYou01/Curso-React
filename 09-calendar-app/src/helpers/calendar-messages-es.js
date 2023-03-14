@@ -1,4 +1,3 @@
-
 export const messages = {
     allDay: 'Todo el día',
     previous: '<',
